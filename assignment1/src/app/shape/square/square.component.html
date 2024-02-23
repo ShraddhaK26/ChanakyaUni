@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Angular Application Real-Time</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<div class="demo">
+    <button type="button" (click)="add()"  class="btn btn-primary mx-4 my-4">Primary</button>
+    <button type="button" (click)="add2()" class="btn btn-danger">Danger</button>
+</div>
+<div>
+    <div>
+        <div class="cir mx-4" *ngFor="let data of circle" ></div> <br> <br>
+        <div class="sqr" *ngFor="let data2 of square"></div>
+    </div>
+</div>
+</html>
